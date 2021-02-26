@@ -93,16 +93,18 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>首先在本機端創一個New key</p>
-<blockquote>
-<p>ssh-keygen -t rsa<br>Enter file in which to save the key (/Users/.ssh/id_rsa): 這裡可以打檔案名稱(ir_rsa_test)若空白則是預設id_rsa)<br>再來按Enter即可</p>
-</blockquote>
-<p>複製剛剛創好的public key<br>貼到Siteground -&gt; DEVS -&gt; SSH Keys Manager-&gt;Import<br><img src="sshtositeground.png"><br>完成面步驟即可</p>
+        <h3 id="首先在本機端創一個New-key"><a href="#首先在本機端創一個New-key" class="headerlink" title="首先在本機端創一個New key"></a>首先在本機端創一個New key</h3><pre><code>ssh-keygen -t rsa
+Enter file in which to save the key (/Users/.ssh/id_rsa): 這裡可以打檔案名稱(ir_rsa_test)若空白則是預設id_rsa)
+再來按Enter即可
+</code></pre>
+<p>複製剛剛創好的public key<br>貼到Siteground -&gt; DEVS -&gt; SSH Keys Manager-&gt;Import</p>
+<img src="/maxblog/2021/02/26/SSH-to-SiteGround/sshtositeground.png" class="" title="avatar">
+
+<p>完成面步驟即可</p>
 <p>接下來到電腦上使用ssh來測試連接</p>
-<blockquote>
-<p>ssh -i ~/.ssh/id_rsa siteground使用者名稱＠網站domain -p18765</p>
-</blockquote>
-<p><code>使用者名稱在siteground創好key的地方點擊Actions-&gt;SSH Credentials 就可以看到</code></p>
+<pre><code>ssh -i ~/.ssh/id_rsa siteground使用者名稱＠網站domain -p18765
+</code></pre>
+<p>使用者名稱在siteground創好key的地方點擊Actions-&gt;SSH Credentials 就可以看到</p>
 
       
     </div>
