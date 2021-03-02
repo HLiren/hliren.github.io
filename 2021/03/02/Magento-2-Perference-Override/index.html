@@ -4,19 +4,19 @@
   <meta charset="utf-8">
   
   
-  <title>Magento 介紹 | Max Blog</title>
+  <title>Magento 2 Perference Override | Max Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Magento 是使用PHP為基礎所開發的電子商務平台(購物車系統)擁有強大的各種訂單、客戶、金流管理功能、且有彈性，讓客戶或網站操作管理員都有很棒的服務。 由於在台灣 Magento 的技術文件不怎麼多，在開發研究多要往國外的文件去尋找，要熟練這個 framework 需要不少的時間，所以需要一些客製化的功能可以去尋找一些額外的Extension免費或付費 Magento Marketplace">
+  <meta name="description" content="使用perference來override core class 123456&lt;?xml version&#x3D;&quot;1.0&quot;?&gt;&lt;config xmlns:xsi&#x3D;&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2001&#x2F;XMLSchema-instance&quot;        xsi:noNamespaceSchemaLocation&#x3D;&quot;urn:ma">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Magento 介紹">
-<meta property="og:url" content="https://hliren.github.io/maxblog/2021/02/26/Magento-guild/index.html">
+<meta property="og:title" content="Magento 2 Perference Override">
+<meta property="og:url" content="https://hliren.github.io/maxblog/2021/03/02/Magento-2-Perference-Override/index.html">
 <meta property="og:site_name" content="Max Blog">
-<meta property="og:description" content="Magento 是使用PHP為基礎所開發的電子商務平台(購物車系統)擁有強大的各種訂單、客戶、金流管理功能、且有彈性，讓客戶或網站操作管理員都有很棒的服務。 由於在台灣 Magento 的技術文件不怎麼多，在開發研究多要往國外的文件去尋找，要熟練這個 framework 需要不少的時間，所以需要一些客製化的功能可以去尋找一些額外的Extension免費或付費 Magento Marketplace">
+<meta property="og:description" content="使用perference來override core class 123456&lt;?xml version&#x3D;&quot;1.0&quot;?&gt;&lt;config xmlns:xsi&#x3D;&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2001&#x2F;XMLSchema-instance&quot;        xsi:noNamespaceSchemaLocation&#x3D;&quot;urn:ma">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-02-26T07:47:44.000Z">
-<meta property="article:modified_time" content="2021-03-02T02:42:16.359Z">
+<meta property="article:published_time" content="2021-03-02T03:30:47.000Z">
+<meta property="article:modified_time" content="2021-03-02T03:32:40.447Z">
 <meta property="article:author" content="Max">
-<meta property="article:tag" content="Magento">
+<meta property="article:tag" content="magento">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/maxblog/atom.xml" title="Max Blog" type="application/atom+xml">
@@ -74,10 +74,10 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-Magento-guild" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-Magento-2-Perference-Override" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/maxblog/2021/02/26/Magento-guild/" class="article-date">
-  <time class="dt-published" datetime="2021-02-26T07:47:44.000Z" itemprop="datePublished">2021-02-26</time>
+    <a href="/maxblog/2021/03/02/Magento-2-Perference-Override/" class="article-date">
+  <time class="dt-published" datetime="2021-03-02T03:30:47.000Z" itemprop="datePublished">2021-03-02</time>
 </a>
     
   </div>
@@ -88,7 +88,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      Magento 介紹
+      Magento 2 Perference Override
     </h1>
   
 
@@ -96,17 +96,21 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h3 id="Magento-是使用PHP為基礎所開發的電子商務平台-購物車系統"><a href="#Magento-是使用PHP為基礎所開發的電子商務平台-購物車系統" class="headerlink" title="Magento 是使用PHP為基礎所開發的電子商務平台(購物車系統)"></a>Magento 是使用PHP為基礎所開發的電子商務平台(購物車系統)</h3><p>擁有強大的各種訂單、客戶、金流管理功能、且有彈性，讓客戶或網站操作管理員都有很棒的服務。</p>
-<p>由於在台灣 Magento 的技術文件不怎麼多，在開發研究多要往國外的文件去尋找，要熟練這個 framework 需要不少的時間，所以需要一些客製化的功能可以去尋找一些額外的Extension免費或付費 <a target="_blank" rel="noopener" href="https://marketplace.magento.com/extensions.html">Magento Marketplace</a> 或者網路上Opensource(Github 等等…) 讓你可以快速的找到你要的功能，節省自己開發的時間或做為開發的參考。</p>
+        <p>使用perference來override core class</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=&quot;1.0&quot;?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">config</span> <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">xsi:noNamespaceSchemaLocation</span>=<span class="string">&quot;urn:magento:framework:ObjectManager/etc/config.xsd&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">preference</span> <span class="attr">for</span>=<span class="string">&quot;Magento\Catalog\Model\Product&quot;</span></span></span><br><span class="line"><span class="tag">                <span class="attr">type</span>=<span class="string">&quot;Maxliren\TestExample\Model\Testproduct&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">config</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<hr>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">Maxliren</span>\<span class="title">TestExample</span>\<span class="title">Model</span>;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Testproduct</span> <span class="keyword">extends</span> \<span class="title">Magento</span>\<span class="title">Catalog</span>\<span class="title">Model</span>\<span class="title">Product</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">getPrice</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">999</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>有使用 Magento\Catalog\Model\Product 裡面的 getPrice()方法<br>都會優先使用 Maxliren\TestExample\Model\Testproduct getPrice() 方法</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://hliren.github.io/maxblog/2021/02/26/Magento-guild/" data-id="ckllzw0bv0001m0u6gilw64bo" data-title="Magento 介紹" class="article-share-link">Share</a>
+      <a data-url="https://hliren.github.io/maxblog/2021/03/02/Magento-2-Perference-Override/" data-id="cklrglmbj0000l4u6ez3u2z8l" data-title="Magento 2 Perference Override" class="article-share-link">Share</a>
       
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/maxblog/tags/Magento/" rel="tag">Magento</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/maxblog/tags/magento/" rel="tag">magento</a></li></ul>
 
     </footer>
   </div>
@@ -114,19 +118,19 @@
     
 <nav id="article-nav">
   
-    <a href="/maxblog/2021/02/26/SSH-to-SiteGround/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/maxblog/2021/03/02/Magento-2-Plugin/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
-          SSH to SiteGround
+          Magento 2 Plugin
         
       </div>
     </a>
   
   
-    <a href="/maxblog/2021/02/26/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/maxblog/2021/03/02/PHP-%E5%BC%95%E7%94%A8/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Hello World</div>
+      <div class="article-nav-title">PHP 引用 (&amp;)</div>
     </a>
   
 </nav>
